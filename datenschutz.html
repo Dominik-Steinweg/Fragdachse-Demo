@@ -1,0 +1,71 @@
+<!doctype html>
+<!-- Privacy page of the browser demo; this file is the only source of the text.
+     scripts/deploy-pages.mjs refuses a real deploy while a draft placeholder for name or contact email remains. -->
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Fragdachse – Datenschutz / Privacy</title>
+<style>
+  :root { color-scheme: light dark; }
+  body { max-width: 46rem; margin: 0 auto; padding: 2rem 1rem 4rem; font: 16px/1.6 system-ui, sans-serif; }
+  h1 { font-size: 1.6rem; margin-bottom: .25rem; }
+  h2 { margin-top: 2.5rem; border-bottom: 1px solid #8884; padding-bottom: .25rem; }
+  h3 { margin-top: 1.75rem; font-size: 1.1rem; }
+  code { font-size: .9em; }
+  a { overflow-wrap: anywhere; }
+  nav a { margin-right: 1rem; }
+</style>
+</head>
+<body>
+<h1>Fragdachse – Datenschutz / Privacy</h1>
+<nav><a href="#de">Deutsch</a><a href="#en">English</a><a href="./">Zur Demo / Back to the demo</a></nav>
+<section lang="de" id="de">
+  <h2>Deutsch</h2>
+  <h3>1. Verantwortlicher</h3>
+  <p>Dominik Steinweg<br>
+    E-Mail: dominiksteinweg@gmx.de</p>
+  <p>Fragdachse ist ein nicht-kommerzielles Hobbyprojekt. Es gibt keine Benutzerkonten, keine Werbung und keine Zahlungen.</p>
+  <h3>2. Hosting über GitHub Pages</h3>
+  <p>Die Demo wird über GitHub Pages ausgeliefert, einen Dienst der GitHub, Inc. (USA). Beim Aufruf verarbeitet GitHub technisch notwendige Daten wie IP-Adresse, Zeitpunkt, abgerufene Datei und Browserkennung in Server-Logs. Auf diese Logs habe ich keinen Zugriff. Rechtsgrundlage ist mein berechtigtes Interesse an einer sicheren Bereitstellung der Demo (Art. 6 Abs. 1 lit. f DSGVO). Näheres steht in der Datenschutzerklärung von GitHub: <a href="https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement">https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement</a></p>
+  <h3>3. Verbindungsaufbau für Mehrspieler-Partien</h3>
+  <p>Beim Start eröffnet das Spiel automatisch einen eigenen Raum oder tritt über einen Einladungslink einem Raum bei. Dafür baut es folgende Verbindungen auf:</p>
+  <ul>
+    <li><strong>PeerJS-Cloud (<code>0.peerjs.com</code>):</strong> Der öffentliche Vermittlungsserver des PeerJS-Projekts bringt Host und Mitspieler zusammen. Dabei werden deine IP-Adresse, eine zufällige Verbindungs-ID mit dem Raumcode und technische Verbindungsdaten übertragen. Spielinhalte laufen nicht über diesen Server.</li>
+    <li><strong>STUN-Server von Google (<code>stun.l.google.com</code>, <code>stun1.l.google.com</code>) und Cloudflare (<code>stun.cloudflare.com</code>):</strong> Sie teilen deinem Browser seine öffentliche IP-Adresse mit, damit eine direkte Verbindung möglich wird. Dabei sehen die Betreiber deine IP-Adresse.</li>
+    <li><strong>Direkte Verbindung (Peer-to-Peer):</strong> Die Partie selbst läuft direkt zwischen den Browsern der Spieler (WebRTC). <strong>Dabei sehen deine Mitspieler deine IP-Adresse, und du siehst ihre.</strong> Übertragen werden außerdem dein frei gewählter Spielername und die Spieldaten der Partie. Ein Relay-Server, der die IP-Adresse verbergen würde, wird nicht verwendet.</li>
+  </ul>
+  <p>Rechtsgrundlage ist die Bereitstellung der von dir gewünschten Mehrspieler-Funktion (Art. 6 Abs. 1 lit. b und f DSGVO). Einige dieser Anbieter sitzen in den USA; dabei kann eine Übermittlung in ein Drittland stattfinden.</p>
+  <h3>4. Speicherung in deinem Browser</h3>
+  <p>Einstellungen, Spielfortschritt und von dir importierte Stimmen speichert das Spiel nur lokal in deinem Browser (localStorage und IndexedDB). Ein Zwischenspeicher (Service Worker) hält Spieldateien für schnellere Ladezeiten vor. Diese Daten verlassen deinen Browser nicht. Du kannst sie jederzeit über die Browsereinstellungen löschen.</p>
+  <h3>5. Kein Tracking</h3>
+  <p>Die Demo verwendet keine Cookies, keine Analyse- oder Tracking-Dienste, keine Werbung und keine Absturzberichte.</p>
+  <h3>6. Deine Rechte</h3>
+  <p>Du hast das Recht auf Auskunft, Berichtigung, Löschung und Einschränkung der Verarbeitung, auf Datenübertragbarkeit sowie auf Widerspruch gegen eine Verarbeitung auf Grundlage berechtigter Interessen (Art. 15–21 DSGVO). Du kannst dich außerdem bei einer Datenschutz-Aufsichtsbehörde beschweren. Für Anfragen genügt eine E-Mail an dominiksteinweg@gmx.de. Ich selbst speichere keine personenbezogenen Daten der Spieler. Für Daten bei GitHub, PeerJS, Google und Cloudflare wende dich bitte direkt an diese Anbieter.</p>
+</section>
+<section lang="en" id="en">
+  <h2>English</h2>
+  <h3>1. Controller</h3>
+  <p>Dominik Steinweg<br>
+    Email: dominiksteinweg@gmx.de</p>
+  <p>Fragdachse is a non-commercial hobby project. There are no user accounts, no ads and no payments.</p>
+  <h3>2. Hosting on GitHub Pages</h3>
+  <p>The demo is served by GitHub Pages, a service of GitHub, Inc. (USA). When you open it, GitHub processes technically necessary data such as your IP address, time, requested file and browser identifier in server logs. I have no access to these logs. The legal basis is my legitimate interest in providing the demo securely (Art. 6(1)(f) GDPR). See GitHub's privacy statement: <a href="https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement">https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement</a></p>
+  <h3>3. Connecting for multiplayer matches</h3>
+  <p>On start the game automatically opens a room of its own, or joins a room through an invite link. For this it opens the following connections:</p>
+  <ul>
+    <li><strong>PeerJS cloud (<code>0.peerjs.com</code>):</strong> The public signalling server of the PeerJS project brings host and players together. It receives your IP address, a random connection ID containing the room code and technical connection data. No game content passes through it.</li>
+    <li><strong>STUN servers of Google (<code>stun.l.google.com</code>, <code>stun1.l.google.com</code>) and Cloudflare (<code>stun.cloudflare.com</code>):</strong> They tell your browser its public IP address so that a direct connection is possible. The operators see your IP address.</li>
+    <li><strong>Direct connection (peer-to-peer):</strong> The match itself runs directly between the players' browsers (WebRTC). <strong>Other players see your IP address, and you see theirs.</strong> Your freely chosen player name and the match data are transmitted as well. No relay server that would hide IP addresses is used.</li>
+  </ul>
+  <p>The legal basis is providing the multiplayer feature you asked for (Art. 6(1)(b) and (f) GDPR). Some of these providers are located in the USA, so data may be transferred to a third country.</p>
+  <h3>4. Storage in your browser</h3>
+  <p>Settings, progress and voices you import are stored only locally in your browser (localStorage and IndexedDB). A service worker caches game files for faster loading. This data does not leave your browser. You can delete it at any time in your browser settings.</p>
+  <h3>5. No tracking</h3>
+  <p>The demo uses no cookies, no analytics or tracking services, no ads and no crash reports.</p>
+  <h3>6. Your rights</h3>
+  <p>You have the right of access, rectification, erasure, restriction of processing, data portability and to object to processing based on legitimate interests (Art. 15–21 GDPR). You may also lodge a complaint with a data protection supervisory authority. An email to dominiksteinweg@gmx.de is enough for any request. I do not store any personal data of players myself. For data held by GitHub, PeerJS, Google and Cloudflare, please contact these providers directly.</p>
+</section>
+</body>
+</html>
